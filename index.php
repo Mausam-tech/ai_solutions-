@@ -2,7 +2,7 @@
 $pageTitle = 'AI-Solutions — The Future of the Digital Employee Experience';
 require_once 'includes/db.php';
 
-// ─── Fetch homepage content ────────────────────────────────
+//  this will fetch the homepage-specific content for services, portfolio, testimonials, articles, and events. Each query is limited to a certain number of items and ordered appropriately (e.g., by display order or creation date). If any query fails, it will catch the exception and set the corresponding variable to an empty array to prevent errors in the template.
 try {
     $homeServices   = $pdo->query('SELECT id,title,icon_class,short_description FROM services ORDER BY display_order ASC LIMIT 6')->fetchAll();
     $homePortfolio  = $pdo->query('SELECT id,title,industry,cover_image_path,short_description FROM portfolio_items ORDER BY created_at DESC LIMIT 3')->fetchAll();
@@ -17,9 +17,7 @@ include 'includes/header.php';
 include 'includes/navbar.php';
 ?>
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
+<!-- this is hero section  -->
 <section class="hero-section" id="hero">
     <div class="hero-bg-pattern"></div>
     <div class="container position-relative z-1 py-5">
@@ -98,9 +96,7 @@ include 'includes/navbar.php';
     </div>
 </section>
 
-<!-- ============================================================
-     STATS
-     ============================================================ -->
+<!-- this will handle stats  -->
 <section class="stats-section" id="stats">
     <div class="container">
         <div class="row g-4 text-center">
@@ -132,9 +128,7 @@ include 'includes/navbar.php';
     </div>
 </section>
 
-<!-- ============================================================
-     SERVICES OVERVIEW
-     ============================================================ -->
+<!-- this is service overview section   -->
 <section class="section-white" id="services">
     <div class="container">
         <div class="section-header text-center">
@@ -176,9 +170,7 @@ include 'includes/navbar.php';
     </div>
 </section>
 
-<!-- ============================================================
-     FEATURED PORTFOLIO
-     ============================================================ -->
+<!-- featured portfolio section  -->
 <section class="section-light" id="portfolio">
     <div class="container">
         <div class="section-header text-center">
@@ -223,9 +215,7 @@ include 'includes/navbar.php';
     </div>
 </section>
 
-<!-- ============================================================
-     TESTIMONIALS PREVIEW
-     ============================================================ -->
+ <!-- TESTIMONIALS PREVIEW code  -->
 <section class="section-white">
     <div class="container">
         <div class="section-header text-center">
@@ -266,9 +256,7 @@ include 'includes/navbar.php';
     </div>
 </section>
 
-<!-- ============================================================
-     LATEST ARTICLES
-     ============================================================ -->
+<!-- latest article section code  -->
 <section class="section-light">
     <div class="container">
         <div class="section-header text-center">
@@ -307,9 +295,7 @@ include 'includes/navbar.php';
     </div>
 </section>
 
-<!-- ============================================================
-     UPCOMING EVENTS
-     ============================================================ -->
+<!-- upcomming events section code   -->
 <?php if (!empty($homeEvents)): ?>
 <section class="section-white">
     <div class="container">
@@ -344,9 +330,7 @@ include 'includes/navbar.php';
 </section>
 <?php endif; ?>
 
-<!-- ============================================================
-     CTA BANNER
-     ============================================================ -->
+<!-- CTA Banner code  -->
 <section class="cta-section text-center">
     <div class="container">
         <h2 class="mb-3">Ready to Transform Your Digital Workplace?</h2>
