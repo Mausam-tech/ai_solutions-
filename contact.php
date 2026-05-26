@@ -12,7 +12,7 @@ $countries = ['Afghanistan','Albania','Algeria','Andorra','Angola','Argentina','
 'Cuba','Cyprus','Czech Republic','Denmark','Egypt','Estonia','Ethiopia','Finland','France','Georgia',
 'Germany','Ghana','Greece','Hungary','India','Indonesia','Iran','Iraq','Ireland','Israel','Italy',
 'Japan','Jordan','Kazakhstan','Kenya','Kuwait','Latvia','Lebanon','Libya','Lithuania','Luxembourg',
-'Malaysia','Malta','Mexico','Moldova','Morocco','Netherlands','New Zealand','Nigeria','Norway',
+'Malaysia','Malta','Mexico','Moldova','Morocco','Nepal','Netherlands','New Zealand','Nigeria','Norway',
 'Oman','Pakistan','Peru','Philippines','Poland','Portugal','Qatar','Romania','Russia','Saudi Arabia',
 'Serbia','Singapore','Slovakia','Slovenia','South Africa','South Korea','Spain','Sri Lanka','Sudan',
 'Sweden','Switzerland','Syria','Taiwan','Thailand','Tunisia','Turkey','Ukraine','United Arab Emirates',
