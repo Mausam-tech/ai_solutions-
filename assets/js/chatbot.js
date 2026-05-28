@@ -54,7 +54,7 @@
         messages.scrollTop = messages.scrollHeight;
     }
 
-    // ─── RULE-BASED RESPONSES ────────────────────────────────
+    // Manual rule-based response generator based on keywords and phrases
     function getResponse(text) {
         const t = text.toLowerCase();
         const base = (typeof BASE_URL !== 'undefined') ? BASE_URL : '';
